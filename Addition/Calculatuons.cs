@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Addition
+namespace Maths
 {
-    public class Addition
+    public class Calculations
     {
         public int sum(int a, int b)
         {
