@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Addition</id>
+    <version>11.8.20</version>
+    <title>Addition</title>
+    <authors>Knowledge</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains the Addition</description>
+    <copyright>Copyright © None</copyright>
+    <iconUrl></iconUrl>
+  </metadata>
+  <files>
+    <file src="\Debug\netstandard2.0\Addition.*" target="lib\net472" />
+  </files>
+</package>
+
+
