@@ -6,6 +6,7 @@ node('master')
 	try 
 	{
 		echo "Job Started..."
+		echo "work space is: ${env.WORKSPACE}"
 		stage('Build Solution') 
 		{
 				BuildOut = bat(script: "${MSBUILD}/msbuild.exe /p:Configuration=Release  /p:SolutionDir=${env.WORKSPACE}")
