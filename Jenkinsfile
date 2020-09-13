@@ -2,6 +2,7 @@ node('master')
 { 
 	def MSBUILD = "C:/Windows/Microsoft.NET/Framework/v4.0.30319"
 	def nuspecFilePath = "${env.WORKSPACE}/Addition.nuspec"
+	def JobError = ""
 	try 
 	{
 		echo "Job Started..."
@@ -27,5 +28,11 @@ node('master')
 				echo "package final version is: ${finalVersion}"    
 
 		}
+	}
+	catch(error)
+	{
+				JobError = error
+				JobStatus = "Failed"
+				echo "Error:" + ${JobError}
 	}
 }
